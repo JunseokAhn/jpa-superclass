@@ -1,3 +1,5 @@
+import Join_Stratege.Book;
+import Join_Stratege.Item;
 import Join_Stratege.Movie;
 
 import javax.persistence.EntityManager;
@@ -18,7 +20,17 @@ public class JpaMain {
         movie.setName("this is a movie");
         movie.setPrice(15000);
 
+        Book book = new Book();
+        book.setAuthor("Junseok");
+        book.setIsbn("1234");
+
+        Item item = new Item();
+        item.setName("Junseok");
+        item.setPrice(10000);
+
+        EM.persist(item);
         EM.persist(movie);
+        EM.persist(book);
 
 
         EM.flush();

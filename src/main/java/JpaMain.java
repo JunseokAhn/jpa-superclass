@@ -19,10 +19,12 @@ public class JpaMain {
         movie.setActor("Junsoku");
         movie.setName("this is a movie");
         movie.setPrice(15000);
-
+        movie.setCreatedBy("준석");
+        
         Book book = new Book();
         book.setAuthor("Junseok");
         book.setIsbn("1234");
+        book.setLastModifiedBy("준석");
 
         Item item = new Item();
         item.setName("Junseok");
